@@ -1,0 +1,19 @@
+{
+	"name": "WeatherAPI_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GetWeatherData",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/data/2.5/weather?q=London&appid=7800335de1018ee3e815950d023b06a3"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
