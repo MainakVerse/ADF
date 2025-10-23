@@ -1,0 +1,60 @@
+{
+	"name": "CarsCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "InputBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "auto-mpg.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "mpg",
+				"type": "String"
+			},
+			{
+				"name": "cylinders",
+				"type": "String"
+			},
+			{
+				"name": "displacement",
+				"type": "String"
+			},
+			{
+				"name": "horsepower",
+				"type": "String"
+			},
+			{
+				"name": "weight",
+				"type": "String"
+			},
+			{
+				"name": "acceleration",
+				"type": "String"
+			},
+			{
+				"name": "model year",
+				"type": "String"
+			},
+			{
+				"name": "origin",
+				"type": "String"
+			},
+			{
+				"name": "car name",
+				"type": "String"
+			}
+		]
+	}
+}
