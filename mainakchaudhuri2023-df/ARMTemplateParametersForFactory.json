@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "mainakchaudhuri2023-df"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://weatherdatalakegen2.dfs.core.windows.net/"
+		},
+		"GetWeatherData_properties_typeProperties_url": {
+			"value": "https://api.openweathermap.org/data/2.5/weather?q=London&appid=7800335de1018ee3e815950d023b06a3"
+		}
+	}
+}
